@@ -9,9 +9,12 @@ html {
 }
 
 body {
-  min-width: 560px;
+  min-width: 320px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
 }
 
 #root {
@@ -19,7 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1100px;
+  background-color: #fff;
 }
 
 .header {
@@ -35,6 +38,7 @@ body {
 }
 
 h1 {
+  width: 240px;
   font-size: 32px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #5e5e5e;
@@ -43,68 +47,87 @@ h1 {
 .connections-shedule {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 520px;
+}
+@media screen and (min-width: 576px) {
+  .connections-shedule {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 768px) {
   .connections-shedule {
-    flex-direction: row;
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .connections-shedule {
+    width: 860px;
   }
 }
 
 .connections-container {
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .connections-container {
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
+  flex-direction: column;
 }
 
 .connections {
   display: flex;
   flex-direction: column;
 }
+.connections__text {
+  width: 280px;
+  margin: 8px;
+}
 .connections__container {
   display: flex;
 }
 .connections__img {
   margin: 8px;
+  border: 1px solid #3eac3e;
   border-radius: 8px;
-  width: 200px;
+  width: 280px;
   animation: shadow 3s infinite linear;
 }
-@keyframes shadow {
-  0% {
-    box-shadow: 3px 6px 20px 0px #000000ba;
+@media screen and (min-width: 576px) {
+  .connections__img {
+    width: 240px;
   }
-  50% {
-    box-shadow: 3px 6px 20px 0px #00000000;
+}
+@media screen and (min-width: 768px) {
+  .connections__img {
+    width: 280px;
   }
-  100% {
-    box-shadow: 3px 6px 20px 0px #000000ba;
+}
+@media screen and (min-width: 992px) {
+  .connections__img {
+    position: absolute;
+    top: 16px;
+    left: 5%;
   }
 }
 .connections__phone {
   text-align: center;
   text-decoration: none;
-  line-height: 105px;
+  margin-top: 8px;
   font-weight: 700;
   color: #5f5fe9;
 }
+@media screen and (min-width: 576px) {
+  .connections {
+    width: 260px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .connections__phone {
-    line-height: 20px;
+  .connections {
+    width: 320px;
   }
 }
 
-hr {
-  width: 85%;
-  margin: 16px;
-}
-
 .shedule {
+  width: 280px;
+  margin-top: 16px;
   margin-bottom: 16px;
   padding: 8px;
   display: flex;
@@ -121,7 +144,12 @@ hr {
 }
 @media screen and (min-width: 768px) {
   .shedule {
-    margin-left: 10%;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .shedule {
+    width: 450px;
   }
 }
 
@@ -131,18 +159,85 @@ hr {
   border-radius: 8px;
 }
 
+.adress {
+  width: 240px;
+}
+@media screen and (min-width: 576px) {
+  .adress {
+    margin-top: 16px;
+    width: 480px;
+  }
+}
+
+iframe {
+  width: 240px;
+}
+@media screen and (min-width: 576px) {
+  iframe {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 992px) {
+  iframe {
+    width: 800px;
+  }
+}
+
+hr {
+  width: 300px;
+  margin: 16px;
+}
+@media screen and (min-width: 576px) {
+  hr {
+    width: 520px;
+  }
+}
+@media screen and (min-width: 768px) {
+  hr {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  hr {
+    width: 860px;
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 240px;
 }
 .about__header {
+  width: 240px;
   margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 700;
 }
+@media screen and (min-width: 576px) {
+  .about {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about {
+    width: 800px;
+  }
+}
 
 .doctors {
+  display: flex;
+  flex-direction: column;
   margin: 8px;
   margin-bottom: 24px;
   display: flex;
@@ -150,6 +245,11 @@ hr {
   color: #fcfaf3;
   border-radius: 8px;
   box-shadow: 3px 6px 20px 0px #000000ba;
+}
+@media screen and (min-width: 576px) {
+  .doctors {
+    flex-direction: row;
+  }
 }
 
 .photo {
@@ -184,12 +284,24 @@ footer {
 }
 
 .footer-img {
-  width: 100px;
+  width: 50px;
 }
 
 .footer-text {
   margin-left: 8px;
   text-decoration: none;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 3px 6px 20px 0px #000000ba;
+  }
+  50% {
+    box-shadow: 3px 6px 20px 0px #00000000;
+  }
+  100% {
+    box-shadow: 3px 6px 20px 0px #000000ba;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
