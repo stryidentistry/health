@@ -45,6 +45,7 @@ h1 {
 }
 
 .connections-shedule {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
