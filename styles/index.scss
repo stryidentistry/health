@@ -93,7 +93,7 @@ h1{
 
         } 
         @include for-large-up{
-            position: absolute;
+            position: fixed;
             top: 16px;
             left: 5%;
         } 
@@ -235,7 +235,6 @@ hr{
 
 footer{
     display: flex;
-    width: 80%;
     margin: 16px;
     justify-content: left;
 
@@ -248,6 +247,7 @@ footer{
 
 .footer-img{
     width: 50px;
+    
 }
 
 .footer-text{
