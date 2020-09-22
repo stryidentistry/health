@@ -31,6 +31,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 992px) {
+  .header {
+    margin-left: 128px;
+  }
+}
 
 .logo {
   height: 70px;

@@ -31,6 +31,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include for-large-up{
+        margin-left: 128px;
+    }
     
 }
 
