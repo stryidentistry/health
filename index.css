@@ -276,6 +276,34 @@ hr {
   margin: 8px;
 }
 
+.documents {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.documents__img {
+  width: 300px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 576px) {
+  .documents__img {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .documents__img {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .documents__img {
+    width: 900px;
+  }
+}
+
 footer {
   display: flex;
   margin: 16px;

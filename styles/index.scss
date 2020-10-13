@@ -227,12 +227,34 @@ hr{
     align-items: center;
     &__img{
     width: 200px;
-    @include for-large-up{
-        width: 250px;
-    } 
+        @include for-large-up{
+            width: 250px;
+        } 
     }
     &__text{
         margin: 8px;
+    }
+}
+
+.documents {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    &__img{
+        width: 300px;
+        margin-bottom: 16px;
+        @include for-small-up{
+            width: 500px;
+        } 
+        @include for-medium-up{
+            width: 700px;
+        }
+        @include for-large-up{
+            width: 900px;
+        }
     }
 }
 
