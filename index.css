@@ -274,6 +274,7 @@ hr {
 }
 .photo__text {
   margin: 8px;
+  width: 200px;
 }
 
 .documents {
